@@ -441,7 +441,7 @@ body {
      /* ТЕКСТ КАРТОЧКИ */
 
     .message-bottom__text {
-
+        color: #828282;
         max-width: 560px;
         width: 100%;
         line-height: 27px;
