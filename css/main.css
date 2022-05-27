@@ -1,5 +1,5 @@
 /* STYLE RESET */
-
+/* СБРАСЫВАНИЕ СТАНДАРТНЫХ СТИЛЕЙ */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -44,7 +44,10 @@ table {
     border-spacing: 0;
 }
 
+/* СБРАСЫВАНИЕ СТАНДАРТНЫХ СТИЛЕЙ */
+
 /* MAINTANCE */
+/* ТЕХНИЧЕСКИЙ КОД (ДЛЯ ОБЩИХ ТЕГОВ ТИПА body button И ТД..) */
 
 body {
 
@@ -55,11 +58,13 @@ body {
 }
 
 
+/* ТЕХНИЧЕСКИЙ КОД (ДЛЯ ОБЩИХ ТЕГОВ ТИПА body button И ТД..) */
 
+/* КОНТЕНТ */
 
 .title {
 
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
 
 }
@@ -70,6 +75,9 @@ body {
 
 }
 
+/* КАРТОЧКА С ПОЛЕЗНОЙ ИНФОРМАЦИЕЙ */
+
+/* ОБЁРТКА */
 .useful-information {
 
     border-left: 3px solid #992828;
@@ -79,7 +87,9 @@ body {
     width: 100%;
 
 }
+/* ОБЁРТКА */
 
+/* ТЕКСТ КАРТОЧКИ */
 .useful-information__text {
 
     line-height: 27px;
@@ -87,8 +97,125 @@ body {
     width: 100%;
 }
 
+/* ТЕКСТ КАРТОЧКИ */
+
+/* ЖИРНЫЙ ТЕКСТ В НАЧАЛЕ */
+
 .strong__text {
-    
+
     font-weight: 700;
 
 }
+
+/* КАРТОЧКА С ПОЛЕЗНОЙ ИНФОРМАЦИЕЙ */
+
+/* КАРТОЧКА С ОФОРМЛЕНИЕМ */
+
+/* ОБЁРТКА */
+
+.decoration-wrp {
+    /* Этот отступ сделал для того что бы отделить карточку от другой */
+    margin-top: 50px;
+    /* Этот отступ сделал для того что бы отделить карточку от другой */
+    background: #F4F2E5;
+    padding: 30px 15px 30px 20px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 3px solid black;
+    max-width: 700px;
+    width: 100%;
+
+}
+
+/* ЗАГОЛОВОК КАРТОЧКИ */
+
+.decoration-wrp__title {
+
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+/* ЗАГОЛОВОК КАРТОЧКИ */
+
+/* КОНТЕНТ КАРТОЧКИ */
+    .decoration-content-wrp__item {
+
+        max-width: 190px;
+        width: 100%;
+
+    }
+
+    /* ЗАГОЛОВОК КОНТЕНТА */
+    .content__title {
+
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #D3D1BF;
+        display: flex;
+        align-items: flex-end;
+    }
+    .content__title_2 {
+
+        max-width: 130px;
+        width: 100%;
+
+    }
+    /* ЗАГОЛОВОК КОНТЕНТА */
+
+
+
+    /* НОМЕР КОНТЕНТА */
+    .content__number {
+
+        font-size: 50px;
+        width: 50px;
+        height: 50px;
+        text-align: end;
+        font-weight: 500;
+        color: #E36628;
+        margin-right: 10px;
+        /* ПОЛОСКИ ФОНА ДЛЯ НОМЕРА */
+        background: repeating-linear-gradient(
+            -45deg,
+            #CBC9B8,
+            #CBC9B8 2px,
+            #F4F2E5 2px,
+            #F4F2E5 5px
+        );
+        /* ПОЛОСКИ ФОНА ДЛЯ НОМЕРА */
+    }
+    /* НОМЕР КОНТЕНТА */
+
+    /* ТЕКСТ КОНТЕНТА */
+
+    .decoration-content__text {
+
+        font-size: 14px;
+        margin-top: 20px;
+        max-width: 190px;
+        width: 100%;
+
+    }
+
+    @media (max-width: 767.99px) {
+        
+        .decoration-content-wrp__item:not(:last-child) {
+
+            margin-bottom: 20px;
+
+        }
+
+    }
+
+    /* ТЕКСТ КОНТЕНТА */
+
+/* КОНТЕНТ КАРТОЧКИ */
+
+/* ОБЁРТКА */
+
+/* КАРТОЧКА С ОФОРМЛЕНИЕМ */
+
+/* КОНТЕНТ */
