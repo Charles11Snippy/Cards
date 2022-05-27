@@ -44,6 +44,15 @@ table {
     border-spacing: 0;
 }
 
+
+img {
+
+    object-fit: cover;
+    display: block;
+    max-width: 100%;
+
+}
+
 /* СБРАСЫВАНИЕ СТАНДАРТНЫХ СТИЛЕЙ */
 
 /* MAINTANCE */
@@ -202,6 +211,7 @@ body {
 
     @media (max-width: 767.99px) {
         
+        /* Отступ для контента на разрешении 768px */
         .decoration-content-wrp__item:not(:last-child) {
 
             margin-bottom: 20px;
@@ -217,5 +227,109 @@ body {
 /* ОБЁРТКА */
 
 /* КАРТОЧКА С ОФОРМЛЕНИЕМ */
+
+/* КАРТОЧКА "КАК МЫ РАБОТАЕМ" */
+
+    /* ОБЁРТКА КАРТОЧКИ */
+
+    .working {
+        /* ОТСТУП ЧТО-БЫ РАЗДЕЛИТЬ КАРТОЧКИ ЕГО МОЖНО УБРАТЬ */
+        margin-top: 50px;
+        /* ОТСТУП ЧТО-БЫ РАЗДЕЛИТЬ КАРТОЧКИ ЕГО МОЖНО УБРАТЬ */
+        background: #EEEEEE;
+        padding: 30px 15px;
+        max-width: 700px;
+        width: 100%;
+    }
+
+    /* ОБЁРТКА КАРТОЧКИ */
+
+    /* ЗАГОЛОВОК КАРТОЧКИ */
+
+    .working__title {
+
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #505050;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    /* ЗАГОЛОВОК КАРТОЧКИ */
+
+    /* КОНТЕНТ КАРТОЧКИ */
+
+    .working-content-wrp__item {
+
+        position: relative;
+        max-width: 103px;
+        width: 100%;
+
+    }
+
+    .working-content-wrp__item:not(:last-child)::after {
+
+        content: '';
+        /* ЗДЕСЬ МОЖНО ПОМЕНЯТЬ ИЗОБРАЖЕНИЕ СТРЕЛОЧКИ  */
+        background: url('../img/working-arrow.svg') no-repeat;
+        /* ЗДЕСЬ МОЖНО ПОМЕНЯТЬ ИЗОБРАЖЕНИЕ СТРЕЛОЧКИ  */
+        width: 22px;
+        height: 40px;
+        display: block;
+        position: absolute;
+        top: 15%;
+        right: -50%;
+
+    }
+
+    /* ТЕКСТ КАРТОЧКИ */
+
+    .working-content-wrp__text {
+
+        font-size: 14px;
+        max-width: 100px;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+
+    }
+
+    @media (max-width: 767.99px) {
+        
+        .working-content-wrp__item:not(:last-child) {
+
+            margin-bottom: 60px;
+    
+        }
+
+        /* ПРАВИЛО ДЛЯ СТРЕЛКИ. ЕЁ ПОВОРОТ И ПОЗИЦИЯ СНИЗУ */
+        .working-content-wrp__item:not(:last-child)::after {
+
+            content: '';
+            /* ЗДЕСЬ МОЖНО ПОМЕНЯТЬ ИЗОБРАЖЕНИЕ СТРЕЛОЧКИ  */
+            background: url('../img/working-arrow.svg') no-repeat;
+            /* ЗДЕСЬ МОЖНО ПОМЕНЯТЬ ИЗОБРАЖЕНИЕ СТРЕЛОЧКИ  */
+            width: 22px;
+            height: 40px;
+            display: block;
+            position: absolute;
+            transform: rotate(90deg);
+            top: 100%;
+            right: 40%;
+            margin-bottom: 30px;
+            
+    
+        }
+
+         /* ПРАВИЛО ДЛЯ СТРЕЛКИ. ЕЁ ПОВОРОТ И ПОЗИЦИЯ СНИЗУ */
+
+    }
+
+    /* ТЕКСТ КАРТОЧКИ */
+
+    /* КОНТЕНТ КАРТОЧКИ */
+
+/* КАРТОЧКА "КАК МЫ РАБОТАЕМ" */
 
 /* КОНТЕНТ */
